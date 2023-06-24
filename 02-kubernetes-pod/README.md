@@ -216,11 +216,11 @@ To configure resources for our Pod
 ```yaml
 resources:
   requests:
-    memory: "25Mi"
-    cpu: "250m"
+    memory: "100Mi"
+    cpu: "100m"
   limits:
-    memory: "50Mi"
-    cpu: "500m"
+    memory: "200Mi"
+    cpu: "200m"
 ```
 
 ```diff
