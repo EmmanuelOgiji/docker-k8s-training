@@ -8,7 +8,7 @@ This exercise has the following objectives:
 - [Port forward](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
   to the Pod to check that it is working
 - Inspect Logs of the container within your pod
--Add [Environment Variables](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
+- Add [Environment Variables](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
 to the container in your Pod
 - Run commands on a container for debugging
 - Add [Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) to
