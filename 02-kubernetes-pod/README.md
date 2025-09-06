@@ -213,11 +213,11 @@ To configure resources for our Pod
 ```yaml
 resources:
   requests:
-    memory: "100Mi"
-    cpu: "100m"
+    memory: "25Mi"
+    cpu: "250m"
   limits:
-    memory: "200Mi"
-    cpu: "200m"
+    memory: "50Mi"
+    cpu: "500m"
 ```
 
 ```diff
@@ -268,6 +268,9 @@ spec:
   This is due to us using just a `demo cluster`
   . [This link](https://signoz.io/blog/kubectl-top/#using-kubectl-top-pod-command) shows an example of what to expect
   when using that command
+- We might need to adjust our resources if things don't work correctly- We can actually enable the Metrics API too:
+  - `minikube addons enable metrics-server`
+  - `kubectl -n kube-system rollout status deploy/metrics-server`
 
 ## Add an initContainer to your Pod
 
